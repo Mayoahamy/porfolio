@@ -1,0 +1,151 @@
+@keyframes slidein_grid1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidein_grid2y3 {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidein_grid4 {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body{
+    background-color:#0d1117;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-evenly;
+    width: fit-content;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.nav{
+    margin: 10px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 50px;
+    transition: all 0.15s ease-in;
+}
+.nav:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+#here{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.3%;
+    width: 600px;
+    height: 500px;
+}
+.grid{
+    background-color: #3d3d3d;
+    border-radius: 15px;
+    transition: all 0.25s ease-in-out;
+    border: 3px solid #3d3d3d;
+}
+#grid1{
+    grid-column: 1;
+    grid-row: 1/3;
+    animation: slidein_grid1 0.7s ease-out;
+}
+#grid2{
+    border-color: #26917f;
+    background-color: #26917f;
+    padding-left: 7%;
+    animation: slidein_grid2y3 0.73s ease-out;
+}
+#grid2_text{
+    color: #000000;
+    font-size: 35px;
+}
+#grid3{
+    border-color: #3f77a5;
+    background-color:#3f77a5;
+    padding-left: 7%;
+    animation: slidein_grid2y3 0.67s ease-out;
+}
+#grid3_text{
+    color: rgb(231, 231, 231);
+    font-size: 27px;
+}
+#grid4{
+    background: url(img/cielo.jpg);
+    background-size:cover;
+    padding-left: 7%;
+    grid-column: 1/3;
+    grid-row: 3;
+    animation: slidein_grid4 0.72s ease-out;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+#grid4_text{
+    color: white;
+    font-size: 34px;
+}
+
+
+#grid1:hover{
+    border: 3px solid #54cbcf;
+}
+#grid2:hover{
+    border: 3px solid #c75467;
+}
+#grid3:hover{
+    border: 3px solid #ffb443;
+}
+#grid4:hover{
+    border: 3px solid #5ab34e;
+}

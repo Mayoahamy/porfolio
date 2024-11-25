@@ -1,0 +1,137 @@
+@keyframes slidein_grid1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+body{
+    background-color:#0d1117;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-evenly;
+    width: fit-content;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.nav{
+    margin: 10px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 50px;
+    transition: all 0.15s ease-in;
+}
+.nav:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+#here{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.7fr;
+    gap: 1.7%;
+    width: 700px;
+    height: 600px;
+}
+.grid{
+    background-color: #3d3d3d;
+    border-radius: 15px;
+    transition: all 0.25s ease-in-out;
+    border: 3px solid transparent;
+}
+#grid1{
+    grid-column: 1;
+    grid-row: 1/3;
+    color: rgb(197, 197, 197);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#grid2{
+    background: url(img/moon-reflected-lake.jpg);
+    background-size: cover;
+    background-clip: padding-box;
+}
+#grid4{
+}
+#github{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    text-align: center;
+    color: rgb(226, 226, 226);
+}
+#git_logo{
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #0d1117;
+    border-radius: 100px;
+}
+h2{
+    transition: all 0.25s ease-in-out;
+}
+#grid5{
+    background: url(img/starry-sky-town.jpg);
+    background-size: cover;
+    background-clip: padding-box;
+}
+#grid6{
+    grid-column: 1/4;
+    grid-row: 3;
+    color: rgb(197, 197, 197);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#grid1:hover{
+    border-color: aquamarine;
+}
+#grid2:hover{
+    border-color: #6344eb;
+}
+#grid3:hover{
+    border-color: rgb(248, 143, 225);
+}
+#grid4:hover{
+    background-color:#eb9544;
+}
+#grid4:hover h2{
+    color: black;
+}
+#grid5:hover{
+    border-color: #6344eb;
+}
+#grid6:hover{
+    border-color: rgb(255, 200, 21);
+}
