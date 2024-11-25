@@ -1,37 +1,23 @@
-@keyframes slidein_project {
-    0%{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    20%{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+p{
+    font-size: 1.03vw;
 }
 body{
     background-color:#0d1117;
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    align-items: center;
-}
-p{
-    font-size: 1.03vw;
 }
 header{
     display: flex;
+    justify-content:space-evenly;
     width: fit-content;
-    top:40px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     color: white;
     background-color: black;
     border-radius: 50px;
-    position:sticky;
 }
 a{
     text-decoration: none;
@@ -54,17 +40,30 @@ a{
 }
 main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
-.project{
-    width: 60%;
-    opacity: 1;
-    height: 150px;
-    background-color: #3d3d3d;
-    margin-bottom: 40px;
+section{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(146,7,7,1) 62%, rgb(0, 68, 82) 100%);
     border-radius: 15px;
+    padding-top: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#name{
+    background: none;
+    border: none;
+    backdrop-filter: blur(15px);
+}
+input,textarea{
+    background: none;
+    border: none;
 }
