@@ -1,11 +1,25 @@
-@keyframes slidein_project {
+@keyframes slidein_project1 {
     0%{
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-40%);
     }
     20%{
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidein_project2 {
+    0%{
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(40%);
     }
     100% {
         opacity: 1;
@@ -18,9 +32,14 @@ body{
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     align-items: center;
+    overflow-x: hidden;
 }
 p{
-    font-size: 1.03vw;
+    font-size: 1vw;
+    margin: 0;
+}
+h2{
+    font-size: 1.35vw;
 }
 header{
     display: flex;
@@ -32,6 +51,8 @@ header{
     background-color: black;
     border-radius: 50px;
     position:sticky;
+    z-index: 9999;
+
 }
 a{
     text-decoration: none;
@@ -60,11 +81,56 @@ main{
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.project{
+.project1{
+    display: flex;
     width: 60%;
-    opacity: 1;
-    height: 150px;
+    aspect-ratio: 5.5/1;
     background-color: #3d3d3d;
     margin-bottom: 40px;
+    border: 3px solid transparent;
     border-radius: 15px;
+    object-fit: cover;
+    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
+    animation: slidein_project1 0.7s ease-out;
+}
+.project1:hover{
+    border-color: rgb(22, 212, 165);
+    transform: scale(1.03);
+}
+.project2{
+    display: flex;
+    width: 60%;
+    aspect-ratio: 5.5/1;
+    background-color: #3d3d3d;
+    margin-bottom: 40px;
+    border: 3px solid transparent;
+    justify-content: flex-end;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
+    animation: slidein_project2 0.7s ease-out;
+}
+.project2:hover{
+    border-color: #bf216d;
+    transform: scale(1.03);
+}
+.project1 img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px; 
+    border-bottom-left-radius: 12px;
+}
+.project2 img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 12px; 
+    border-bottom-right-radius: 12px;    
+}
+.project_text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 3% 1% 4%;
 }

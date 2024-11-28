@@ -1,0 +1,113 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(234, 234, 234);
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(124, 124, 124) rgb(17, 17, 17);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(17, 17, 17);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(26,26,26);
+    border-radius: 20px;
+    border: 1px solid orange;
+  }
+header{
+    background: linear-gradient(to right, rgb(63, 63, 63),rgb(32, 32, 32));
+    padding: 30px;
+    margin: 0;
+}
+main{
+    margin: 2% 1.5% 0 1.5%;
+}
+.logotext{
+    width:300px;
+}
+progress{
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    border-radius: 3px;
+}
+progress::-webkit-progress-value {
+    background-color: rgb(241, 212, 43);
+}
+progress::-moz-progress-bar {
+    background-color: rgb(241, 212, 43); 
+}
+section{
+    margin: 1.5% 0 1.5% 0;
+    background: linear-gradient(to right, rgb(68, 68, 68),rgb(134, 134, 134));
+    border-radius: 10px;
+    padding: 1%;
+}
+.bookshelf{
+    display:flex;
+    justify-content: center;
+    width: fit-content;
+}
+.about{
+    display:flex;
+    justify-content: center;
+}
+.logo{
+    border-radius: 10px;
+}
+.aboutText{
+    margin-right: 500px;
+}
+.img{
+    overflow:hidden;
+    margin: 0 0px 0 0px;
+    transition: transform 0.2s ease-in;
+}
+.imagen{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 25vw;
+    border:3px solid color(from red srgb 255 255 255);
+}
+#img1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+}
+#img3{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align:center;
+    padding: 10px;
+    bottom: 0;
+    height: 10%;
+    opacity: 80%;
+}
+.img:hover{
+    transform: scale(1.2);
+}
+article{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    opacity: 100%;
+}
+

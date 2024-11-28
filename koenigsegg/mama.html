@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Clase 6</h1>
+        <div id="progressbar">
+            <progress id="pageProgress" value="0" max="100"></progress>
+        </div>
+    </header>
+    <br><br><br><br><br><br>
+    <form method="post" action="/send/">
+
+        <!--Input text-->
+        <h3>Input text y meter</h3>
+        <input type="text" id="textbox" maxlength="15">
+        <meter value="0" min="0" max="15" low="3" high="10" optimum="13"></meter><br><br>
+
+        <!--Input checkbox-->
+        <h3>Input checkbox</h3>
+        <input type="checkbox" id="checkbox">
+        <span id="checker" style="color: red;">No seleccionado</span><br>
+        <input type="checkbox"><br>
+        <input type="checkbox"><br><br>
+
+        <!--Input file-->
+        <h3>Input file</h3>
+        <input type="file"><br><br>
+
+        <!--Input color-->
+        <h3>Input color</h3>
+        <input type="color" id="InputColor"><span id="colorSeleccionado"></span><br><br>
+
+        <!--Input number-->
+        <h3>Input number</h3>
+        <input type="number">
+
+        <!--Input radio-->
+        <h3>Input radio</h3>
+        <input type="radio" name="ejemplo">
+        <input type="radio" name="ejemplo">
+        <input type="radio" name="ejemplo"><br><br>
+
+        <!--Input date-->
+        <h3>Input date</h3>
+        <input type="date"><br><br>
+
+        <!--Input password-->
+        <h3>Input password</h3>
+        <input type="password"><br><br>
+
+        <!--Input range-->
+        <h3>Input range</h3>
+        <input type="range" id="range" min="0" max="500"><span id="rangeText"></span><br><br>
+
+        <!--Input reset-->
+        <h3>Input reset</h3>
+        <input type="reset"><br><br>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!--Details y summary-->
+        <h3>Details y summary</h3>
+        <details open>
+            <summary>Ejemplo details y summary</summary>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat metus sed rhoncus tincidunt. 
+            Sed auctor posuere erat et feugiat. Pellentesque cursus, lectus et imperdiet consequat, augue mi faucibus mi, 
+            quis ultrices purus justo ut risus. Vivamus nec sollicitudin libero. Nulla facilisi. Nullam condimentum mi et 
+            nunc iaculis mattis. Nam quis dictum magna. Nam venenatis quis magna at sagittis. 
+        </details>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </form>
+
+    <!--Dialog-->
+    <dialog>
+        <h3>Alerta</h3>
+        <button onclick="this.parentElement.close()"><h2>Cerrar</h2></button>
+    </dialog>
+    
+    <!--Button-->
+    <button id="dialog" onclick="openDialog()"><h3>Abrir</h3></button>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="script.js"></script>
+</body>
+</html>

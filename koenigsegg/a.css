@@ -1,0 +1,102 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(36, 177, 243);
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 9999;
+}
+
+form {
+    margin-left: 30px
+}
+
+details {
+    width: 30%;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+button {
+    padding: 10px;
+    width: 130px;
+    border-color: black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 212, 255);
+}
+
+button:hover {
+    background-color: rgb(36, 177, 243);
+    color: rgb(221, 221, 221);
+}
+
+button:disabled,
+button[disabled] {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+dialog {
+    border-radius: 10px;
+}
+
+#dialog {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+meter {
+    margin-left: 10px;
+    width: 200px;
+}
+
+#progressbar {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 99%;
+    background-color: rgb(36, 177, 243);
+}
+
+#pageProgress {
+    margin: 0;
+    height: 7px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    border-color: rgb(36, 177, 243);
+    border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 3px;
+    background-color: rgb(241, 212, 43);
+}
+
+progress::-moz-progress-bar {
+    border-radius: 3px;
+    background-color: rgb(241, 212, 43);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="header_text">Componentes de una PC</h1>
+    </header>
+    <main>
+        <section id="login_section">
+            <h1 id="login_tit">Inicio</h1>
+            <form id="login" action="../index2.html">
+                <div class="nombre">
+                    <input type="text" placeholder="Usuario" required>
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <span onclick="cc()">¿Olvidaste la contraseña?</span>
+                <div class="input">
+                    <input id="boton" type="submit" value="Ingresar">
+                </div>
+            </form>
+        </section>
+        <section id="cambiar">
+            <div id="login_header">
+                <a href="login.html"><img src="go_back.png" alt=""></a>
+                <h1 id="remember_tit">Cambiar contraseña</h1>
+            </div>
+            <p class="texto_info">Te enviaremos un código a tu correo electrónico para que recuperes tu contraseña. <br><br> Ingresa tu correo:</p>
+            <div id="forgotpassword">
+                <div class="nombre">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input">
+                    <button id="boton_code" onclick="go_code()">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <section id="codigo">
+            <div id="login_header">
+                <a href="login.html"><img src="go_back.png" alt=""></a>
+                <h1 id="remember_tit">Cambiar contraseña</h1>
+            </div>
+            <p class="texto_info">Ingrese el código que se le envió al correo:</p>
+            <div id="forgotpassword">
+                <div class="code">
+                    <input id="code" type="text" maxlength="6">
+                </div>
+                <p id="texto_alert"></p>
+                <div class="input">
+                    <button id="boton_code" onclick="check_code()">Confirmar</button>
+                </div>
+            </div>
+        </section>
+        <section id="cambiar_contraseña">
+            <div id="login_header">
+                <a href="login.html"><img src="go_back.png" alt=""></a>
+                <h1 id="remember_tit">Cambiar contraseña</h1>
+            </div>
+            <p class="texto_info">Ingrese su nueva contraseña</p>
+            <form id="forgotpassword">
+                <div class="password">
+                    <input id="password1" type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="password">
+                    <input id="password2" type="password" placeholder="Confirmar contraseña" required>
+                </div>
+                <div class="input">
+                    <input id="boton" type="submit" value="Ingresar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,31 @@
-
+@keyframes slidein_1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidein_2{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 p{
     font-size: 1.03vw;
 }
@@ -40,30 +67,75 @@ a{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
     margin-bottom: 80px;
 }
 section{
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 300px;
-    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(146,7,7,1) 62%, rgb(0, 68, 82) 100%);
+    height: 150px;
+    width: 30%;
+    margin-top: 30px;
+}
+div{
+    background-color: #3d3d3d;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
     border-radius: 15px;
-    padding-top: 40px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    border: 3px solid transparent;
+    transition: border-color 0.15s ease-in;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+img{
+    width: 50px;
+    height: 50px;
 }
-#name{
-    background: none;
-    border: none;
-    backdrop-filter: blur(15px);
+#number_text{
+    color: #29a71a;
+    font-weight: bold;
+    font-size: 25px;
 }
-input,textarea{
-    background: none;
-    border: none;
+#mail_text{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 20px;
+}
+#linked_text{
+    color: #0077b5;
+    font-weight: bold;
+    font-size: 20px;
+}
+#facebook_text{
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 20px;
+}
+#number{
+    animation: slidein_1 0.4s ease-in;
+}
+#mail{
+    animation: slidein_2 0.36s ease-in;
+}
+#linked{
+    animation: slidein_1 0.41s ease-in;
+}
+#facebook{
+    animation: slidein_2 0.38s ease-in;
+}
+#number:hover{
+    border-color: #29a71a;
+}
+#mail:hover{
+    border-color: #f44336;
+}
+#linked:hover{
+    border-color: #0077b5;
+}
+#facebook:hover{
+    border-color: #1976d2;
 }

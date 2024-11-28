@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Clase 8</title>
+</head>
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1>Componentes de una PC</h1>
+        <button onclick="location.href='vistas/login.html'" id="login_button">LOGIN</button>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <!--Texto de introducción-->
+        <div id="inicio">
+            <p id="inicioText">En las siguientes clases, explicaremos el desarrollo de una página web sencilla, 
+                sobre los componentes de una computadora de escritorio, más el gabinete. Nos centraremos parte 
+                por parte en cada clase, para que se entienda bien cómo funciona, para qué y por qué es así. 
+            </p>
+        </div>
+
+        <!--Información principal-->
+        <div id="principal">
+            <!--Barra de navegación-->
+            <nav id="nav">
+                <div id="navList">
+                    <a href="#header"><img src="img/home_icon.png" alt="" id="comp_icon"><p style="font-size: 25px;" class="comp_index">Inicio</p></a>
+                    <a href="#art1"><img src="img/gabinete_icon.png" alt="" id="comp_icon"><p class="comp_index">Gabinete</p></a>
+                    <a href="#art2"><img src="img/motherboard_icon.png" alt="" id="comp_icon"><p class="comp_index">Motherboard</p></a>
+                    <a href="#art3"><img src="img/cpu_icon.png" alt="" id="comp_icon"><p class="comp_index">CPU</p></a>
+                    <a href="#art4"><img src="img/gpu_icon.png" alt="" id="comp_icon"><p class="comp_index">GPU</p></a>
+                    <a href="#art5"><img src="img/ram_icon.png" alt="" id="comp_icon"><p class="comp_index">Memoria RAM</p></a>
+                    <a href="#art6"><img src="img/disco_icon.png" alt="" id="comp_icon"><p class="comp_index">Almacenamiento</p></a>
+                    <a href="#art7"><img src="img/fuente_icon.png" alt="" id="comp_icon"><p class="comp_index">Fuente</p></a>
+                </div>
+            </nav>
+
+            <!--Sección de componentes-->
+            <section id="section_main">
+
+                <!--Primer componente-->
+                <h1><span id="art1"></span></h1>
+                <section class="comp">
+                        <img src="img/gabinete.jpg" class="imagen_componente" alt="">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">Gabinete</h2>
+                        <p class="text_componente">
+                            El gabinete es la carcasa donde montaremos nuestra PC. Es muy importante elegir uno que se adecue a nuestras necesidades. Dependerán de si tenemos componentes de mucho consumo o no, si queremos estética o simpleza, etc.
+                        </p>
+                    </section>
+                </section>
+
+                <!--Segundo componente-->
+                <h1><span id="art2"></span></h1>
+                <section class="comp">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">Motherboard</h2>
+                        <p class="text_componente">
+                            La placa madre o motherboard va a funcionar como el sistema nervioso central de nuestro PC, 
+                            esta es la que se va a encargar de servir como punto de integración y contacto entre todos 
+                            nuestros demás componentes.
+                        </p>
+                    </section>
+                    <img src="img/motherboard.jpg" class="imagen_componente" alt="">
+                </section>
+
+                <!--Tercer componente-->
+                <h1><span id="art3"></span></h1>
+                <section class="comp">
+                    <img src="img/procesador.jpg" class="imagen_componente" alt="">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">CPU</h2>
+                        <p class="text_componente">
+                            El microprocesador o CPU va a funcionar como el cerebro de nuestra computadora. 
+                            Este componente en específico es el que se encarga de recibir e interpretar datos y 
+                            ejecutar la secuencia de instrucciones consecuentes, además controla el buen funcionamiento
+                            de los demás componentes del sistema.
+                        </p>
+                    </section>
+                </section>
+
+                <!--Cuarto componente-->
+                <h1><span id="art4"></span></h1>
+                <section class="comp">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">GPU</h2>
+                        <p class="text_componente">
+                            La placa de video o GPU es el componente que va a renderizar las imágenes que veamos. 
+                            Puede ser reemplazada por una iGPU, o unidad gráfica de procesamiento integrada, la cual viene en el procesador, pero no se compara en rendimiento. Es el componente más caro para comprar en general.
+                    </section>
+                    <img src="img/gpu.avif" class="imagen_componente" alt="">
+                </section>
+
+                <!--Quinto componente-->
+                <h1><span id="art5"></span></h1>
+                <section class="comp">
+                    <img src="img/ram.jpg" class="imagen_componente" alt="">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">Memoria RAM</h2>
+                        <p class="text_componente">
+                            La memoria RAM se encarga de almacenar de forma temporal los datos de los programas que la PC utiliza en 
+                            ese momento. La cantidad de memoria RAM que tengas afecta directamente al rendimiento del dispositivo principalmente en multitarea.
+                        </p>
+                    </section>
+                </section>
+
+                <!--Sexto componente-->
+                <h1><span id="art6"></span></h1>
+                <section class="comp">
+                    <section class="comp_content">
+                        <h2 class="titulo_comp">Almacenamiento</h2>
+                        <p class="text_componente">
+                            El disco de almacenamiento, es el componente que almacena todos nuestros datos y archivos. Existen tres tipos principales según su relación precio / calidad: HDD, barato pero lento; SDD SATA, rápido y algo más caro; y SDD M.2, muy rápido y caro.
+                        </p>
+                    </section>
+                    <img src="img/disco.jpg" class="imagen_componente" alt="">
+                </section>
+
+                <!--Séptimo componente-->
+                <h1><span id="art7"></span></h1>
+                <section class="comp">
+                    <img src="img/fuente.jpg" class="imagen_componente" alt="">
+                    <section class="comp_content">
+                           <h2 class="titulo_comp">Fuente</h2>
+                        <p class="text_componente">
+                            La fuente de poder es la encargada de atribuirle la energía a la computadora, 
+                            esta está dividida en categorías, yendo de la menos eficiente 80 Plus White, a la más eficiente 80 Plus Titanium (al mismo tiempo la más cara). El orden es este: White, Bronze, Silver, Gold, Platinum y Titanium.       
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section id="foot_sec_1">
+            <p>Teleinformática</p>
+            <div id="footer_img_div">
+                <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" class="footer_img" alt=""></a>
+                <a href="https://youtube.com" target="_blank"><img src="img/youtube.png" class="footer_img" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/ig.png" class="footer_img" alt=""></a>
+                <a href="https://x.com" target="_blank"><img src="img/x.png" class="footer_img" alt=""></a>
+            </div>
+        </section>
+        <section id="foot_sec_2">
+            <div id="nombres">
+                <ul>
+                    <li id="name">Santiago Oviedo</li>
+                    <li id="name">Silva Lucas</li>
+                    <li id="name">Laureano Desantadina</li>
+                    <li id="name">Santiago Elias</li>
+                </ul>
+            </div>
+
+            <div id="form_container">
+                <div id="text_contacto">Contacto</div>
+                <form class="form">
+                    <div id="form_part1">
+                        <div class="campo">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="campo">
+                            <input type="email" placeholder="Correo Electrónico" required>
+                        </div>
+                    </div>
+                    <div id="form_part2">
+                        <div class="campo">
+                            <textarea id="textarea" placeholder="Mensaje"></textarea required>
+                        </div>
+                    </div>
+                    <div id="form_part3">
+                        <div class="boton_container">
+                            <input id="boton" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
