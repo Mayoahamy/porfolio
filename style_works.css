@@ -131,7 +131,7 @@ main{
     border: 3px solid transparent;
     border-radius: 15px;
     transition: border-color 0.15s ease-in,transform 0.15s ease-in;
-    animation: slidein_project1 0.7s ease-out;
+    animation: slidein_project2 0.71s ease-out;
 }
 .project3{
     display: flex;
@@ -146,7 +146,7 @@ main{
     border: 3px solid transparent;
     border-radius: 15px;
     transition: border-color 0.15s ease-in,transform 0.15s ease-in;
-    animation: slidein_project1 0.7s ease-out;
+    animation: slidein_project1 0.65s ease-out;
 }
 .project4{
     display: flex;
@@ -161,7 +161,7 @@ main{
     border: 3px solid transparent;
     border-radius: 15px;
     transition: border-color 0.15s ease-in,transform 0.15s ease-in;
-    animation: slidein_project1 0.7s ease-out;
+    animation: slidein_project2 0.68s ease-out;
 }
 .project1:hover{
     border-color: rgb(22, 212, 165);
