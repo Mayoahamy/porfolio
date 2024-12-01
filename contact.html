@@ -14,25 +14,21 @@
         <a href="contact.html"><p class="nav" id="here">Contacto</p></a>
     </header>
     <main>
-        <section id="first">
-            <div id="number">
-                <img src="img/whatsapp.png" alt="">
-                <p id="number_text">223-312-0372</p>
-            </div>
-            <div id="mail">
-                <img src="img/gmail.png" alt="">
-                <p id="mail_text">santiagoeliasmanuel@gmail.com</p>
-            </div>
+        <section onclick="window.open('tel:2233120372')" style="cursor:pointer;" id="whatsapp">
+            <img src="img/whatsapp.png" alt="">
+            <h2>223-312-0372</h2>
         </section>
-        <section id="second">
-            <div id="linked" onclick="window.open('https://www.linkedin.com/in/elias-manuel-santiago-1a319a33b', '_blank')" style="cursor: pointer;" >
-                <img src="img/linkedin.png" alt="">
-                <p id="linked_text">Perfil profesional <br>Elias Manuel Santiago</p>
-            </div>
-            <div id="facebook" onclick="window.open('https://www.facebook.com', '_blank')" style="cursor: pointer;">
-                <img src="img/facebook.png" alt="">
-                <p id="facebook_text">Cuenta personal <br> Santiago Elias</p>
-            </div>
+        <section onclick="window.open('mailto:santiagoeliasmanuel@gmail.com')" style="cursor:pointer;" id="gmail">
+            <img src="img/gmail.png" alt="">
+            <h2>santiagoeliasmanuel@gmail.com</h2>
+        </section>
+        <section onclick="window.open('https://www.linkedin.com/in/elias-manuel-santiago-1a319a33b/')" style="cursor:pointer;" id="linkedin">
+            <img src="img/linkedin.png" alt="">
+            <h2>Elias Santiago</h2>
+        </section>
+        <section onclick="window.open('https://www.facebook.com/')" style="cursor:pointer;" id="facebook">
+            <img src="img/facebook.png" alt="">
+            <h2>Elias Santiago</h2>
         </section>
     </main>
     <script src="script.js"></script>

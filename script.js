@@ -1,13 +1,10 @@
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('activo');  // Añadir clase 'activo'
-      } else {
-        entry.target.classList.remove('activo');  // Eliminar clase si sale de pantalla
-      }
+let works1 = document.querySelectorAll(".img1");
+let works2 = document.querySelectorAll(".img2");
+if (navigator.userAgent.match(/firefox|fxios/i)) {
+    works1.forEach(function(image) {
+        image.style.width = "70%";
     });
-  });
-  
-  // Observar el elemento
-  const element = document.getElementsByClassName('.project');
-  observer.observe(element);
+    works2.forEach(function(image) {
+        image.style.width = "70%";
+    });
+} 

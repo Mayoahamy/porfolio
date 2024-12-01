@@ -26,25 +26,47 @@
         transform: translateX(0);
     }
 }
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #3d3d3d #0d1117;
+}
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #0d1117;
+    color: #3d3d3d;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #0d1117;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
 body{
     background-color:#0d1117;
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     align-items: center;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 p{
-    font-size: 1vw;
+    font-size: 100%;
     margin: 0;
 }
 h2{
-    font-size: 1.35vw;
+    font-size: 150%;
 }
 header{
     display: flex;
+    align-items: center;
+    justify-content:space-around;
+    min-width: 400px;
     width: fit-content;
-    top:40px;
+    top: 5%;
     margin-right: auto;
     margin-left: auto;
     color: white;
@@ -52,7 +74,6 @@ header{
     border-radius: 50px;
     position:sticky;
     z-index: 9999;
-
 }
 a{
     text-decoration: none;
@@ -65,6 +86,7 @@ a{
     padding: 8px;
     border-radius: 50px;
     transition: all 0.15s ease-in;
+    width: max-content;
 }
 .nav:hover{
     background-color: rgba(255, 255, 255, 0.3);
@@ -84,12 +106,60 @@ main{
 .project1{
     display: flex;
     width: 60%;
-    aspect-ratio: 5.5/1;
-    background-color: #3d3d3d;
+    background: url(img/gilver.PNG);
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    height: max-content;
+    padding-bottom: 1%;
     margin-bottom: 40px;
     border: 3px solid transparent;
     border-radius: 15px;
-    object-fit: cover;
+    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
+    animation: slidein_project1 0.7s ease-out;
+}
+.project2{
+    display: flex;
+    width: 60%;
+    background: url(img/cortazar.PNG);
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    height: max-content;
+    padding-bottom: 1%;
+    margin-bottom: 40px;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
+    animation: slidein_project1 0.7s ease-out;
+}
+.project3{
+    display: flex;
+    width: 60%;
+    background: url(img/componentes.PNG);
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    height: max-content;
+    padding-bottom: 1%;
+    margin-bottom: 40px;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
+    animation: slidein_project1 0.7s ease-out;
+}
+.project4{
+    display: flex;
+    width: 60%;
+    background: url(img/koegn.PNG);
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    height: max-content;
+    padding-bottom: 1%;
+    margin-bottom: 40px;
+    border: 3px solid transparent;
+    border-radius: 15px;
     transition: border-color 0.15s ease-in,transform 0.15s ease-in;
     animation: slidein_project1 0.7s ease-out;
 }
@@ -97,37 +167,19 @@ main{
     border-color: rgb(22, 212, 165);
     transform: scale(1.03);
 }
-.project2{
-    display: flex;
-    width: 60%;
-    aspect-ratio: 5.5/1;
-    background-color: #3d3d3d;
-    margin-bottom: 40px;
-    border: 3px solid transparent;
-    justify-content: flex-end;
-    border-radius: 15px;
-    object-fit: cover;
-    transition: border-color 0.15s ease-in,transform 0.15s ease-in;
-    animation: slidein_project2 0.7s ease-out;
-}
 .project2:hover{
     border-color: #bf216d;
     transform: scale(1.03);
 }
-.project1 img {
-    width: 20%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 12px; 
-    border-bottom-left-radius: 12px;
+.project3:hover{
+    border-color: rgb(22, 212, 165);
+    transform: scale(1.03);
 }
-.project2 img{
-    width: 20%;
-    height: 100%;
-    object-fit: cover;
-    border-top-right-radius: 12px; 
-    border-bottom-right-radius: 12px;    
+.project4:hover{
+    border-color: #caeb54;
+    transform: scale(1.03);
 }
+
 .project_text{
     display: flex;
     flex-direction: column;
